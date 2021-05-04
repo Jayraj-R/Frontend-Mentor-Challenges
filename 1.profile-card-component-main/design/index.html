@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-us-compatible" content="ie=edge">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        body {
+            font-family: 'Kumbh Sans';
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        .bg-prim {
+            background-color: hsl(185, 75%, 39%);
+        }
+        
+        .top-circle {
+            position: fixed;
+            right: 50%;
+            bottom: 30%;
+            z-index: -1;
+        }
+        
+        .top-bottom {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            z-index: -1;
+        }
+        
+        .box {
+            font-family: 'Kumbh Sans';
+            display: block;
+            background-color: white;
+            width: 325px;
+            margin: auto;
+            margin-top: 30vh;
+            padding-bottom: 20px;
+            z-index: 100;
+            border-radius: 5%;
+            text-align: center;
+        }
+        
+        .banner {
+            display: block;
+            width: 325px;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+        }
+        
+        .profile-img {
+            margin-top: -15%;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 5px;
+            border-color: white;
+        }
+        
+        .personal-info {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        hr {
+            border-color: hsl(0, 0%, 59%)
+        }
+        
+        .grey-text {
+            color: hsl(0, 0%, 59%);
+            font-weight: 400;
+        }
+        
+        .black-text {
+            font-weight: 700;
+            font-size: 20px;
+        }
+        
+        .stat-info {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .stats {
+            flex-direction: column;
+            display: flex;
+        }
+        
+        .tag {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body class="bg-prim">
+
+    <img class="top-circle" src="../images/bg-pattern-top.svg" />
+
+    <div class="box">
+        <img class="banner" src="../images/bg-pattern-card.svg">
+        <img class="profile-img" src="../images/image-victor.jpg">
+        <br>
+        <div class="info">
+            <div class="personal-info">
+                <span class="black-text">Victor Crest</span>
+                <span class="grey-text weight-400">&nbsp; 26 </span>
+                <div>
+                    <span class="grey-text weight-400" style="font-size:16px">London</span>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="stat-info">
+                <div class="stats">
+                    <span class="black-text">80K</span>
+                    <span class="weight-400 grey-text tag">Followers</span>
+                </div>
+                <div class="stats">
+                    <span class="black-text">803K</span>
+                    <span class="weight-400 grey-text tag">Likes</span>
+                </div>
+                <div class="stats">
+                    <span class="black-text">1.4K</span>
+                    <span class="weight-400 grey-text tag">Photos</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a target="_blank" href="https://www.linkedin.com/in/jayraj-rathod-325452193/">Jayraj Rathod</a>.
+    </div>
+
+    <img class="top-bottom" src="../images/bg-pattern-bottom.svg" />
+
+</body>
+
+</html>
